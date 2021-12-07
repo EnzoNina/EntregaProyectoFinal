@@ -1,0 +1,16 @@
+$(document).ready(function(){
+    $('.fas.fa-bars.nav_phone').on("click",function(){
+        $("#menu").css("visibility","visible");
+        $(this).css("visibility","hidden");
+        $("#cerrar").css("visibility","visible");
+        $(".contenido").css("margin-top","20px");
+    });    
+});
+$(document).ready(function(){
+    $('.fas.fa-times').on("click",function(){
+        $("#menu").css("visibility","hidden");
+        $(this).css("visibility","hidden");
+        $("#abrir").css("visibility","visible");        
+        $(".contenido").css("margin-top","-220px");        
+    });    
+});
